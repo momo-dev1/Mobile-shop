@@ -1,0 +1,44 @@
+{
+  "productlist": [
+    {
+      "id": "recZkNf2kwmdBcqd0",
+      "name": "accent chair",
+      "price": 25999,
+      "image": "https://dl.airtable.com/.attachmentThumbnails/e8bc3791196535af65f40e36993b9e1f/438bd160?ts=1651338465&userId=usrQMwWEPx18KgLcP&cs=f793890efc1f47c3",
+      "colors": ["#ff0000", "#00ff00", "#0000ff"],
+      "company": "marcos",
+      "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+      "category": "office",
+      "shipping": true
+    }
+  ],
+  "singleProduct": [
+    {
+      "id": "recZkNf2kwmdBcqd0",
+      "stock": 3,
+      "price": 25999,
+      "shipping": true,
+      "colors": ["#ff0000", "#00ff00", "#0000ff"],
+      "category": "office",
+      "images": [
+        {
+          "id": "attub6EG88kJKuYs8",
+          "url": "https://dl.airtable.com/.attachments/ebb5ac101474bf42ce7b7b6e951a771f/2b6c65d2/product-4.jpeg?ts=1651338538&userId=usrQMwWEPx18KgLcP&cs=9176d7baada42b3a"
+        },
+        {
+          "id": "attus6EG88kJKuYs8",
+          "url": "https://dl.airtable.com/.attachments/ebb5ac101474bf42ce7b7b6e951a771f/2b6c65d2/product-4.jpeg?ts=1651338538&userId=usrQMwWEPx18KgLcP&cs=9176d7baada42b3a"
+        },
+        {
+          "id": "attkb6EG88kJKuYs8",
+          "url": "https://dl.airtable.com/.attachments/ebb5ac101474bf42ce7b7b6e951a771f/2b6c65d2/product-4.jpeg?ts=1651338538&userId=usrQMwWEPx18KgLcP&cs=9176d7baada42b3a"
+        }
+      ],
+      "reviews": 25,
+      "stars": 4.9,
+      "name": "accent chair",
+      "description": "Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge",
+      "company": "marcos"
+    }
+  ]
+}
