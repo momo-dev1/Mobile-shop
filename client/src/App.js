@@ -1,10 +1,23 @@
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import ProductList from "./components/ProductList";
+import SingleProduct from "./components/SingleProduct";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
-
-    </div>
-
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />}>
+          <Route path="mobiles" element={<ProductList />}>
+            <Route path=":mobileId" element={<SingleProduct />} />
+          </Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

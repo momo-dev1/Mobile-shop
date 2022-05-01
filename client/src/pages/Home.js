@@ -1,6 +1,8 @@
+import {ProductList} from "../components/index"
+
 const HomePage = () => {
     return (
-        <div>Home</div>
+        <div><ProductList /></div>
     )
 }
 

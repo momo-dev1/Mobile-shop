@@ -1,0 +1,43 @@
+{
+  "productlist": [
+    {
+      "id": "recZkNf2kwmdBcqd0",
+      "name": "iPhone 11",
+      "price": 39999,
+      "image": "/mobiles/mobile-1.webp",
+      "color": "Black",
+      "company": "apple",
+      "shipping": true,
+      "reviews": 25,
+      "stars": 4.5
+    }
+  ],
+  "singleProduct": [
+    {
+      "id": "recZkNf2kwmdBcqd0",
+      "stock": 3,
+      "price": 39999,
+      "shipping": true,
+      "color": "Black",
+      "images": [
+        {
+          "id": "attub6EG88kJKuYs8",
+          "url": "/mobiles/mobile-1.webp"
+        },
+        {
+          "id": "attus6EG88kJKuYs8",
+          "url": "/mobiles/mobile-2.webp"
+        },
+        {
+          "id": "attkb6EG88kJKuYs8",
+          "url": "./src/assets/mobiles/mobile-3.webp"
+        }
+      ],
+      "reviews": 25,
+      "stars": 4.9,
+      "name": "iPhone 11",
+      "description": "Shoot 4K videos, beautiful portraits, and sweeping landscapes with the all-new dual-camera system. Capture your best low-light photos with Night mode. See true-to-life color in your photos, videos, and games on the 6.1-inch Liquid Retina display.3 Experience unprecedented performance with A13 Bionic for gaming, augmented reality (AR), and photography. Do more and charge less with all-day battery life.2 And worry less with water resistance up to 2 meters for 30 minutes.1",
+      "company": "apple"
+    }
+  ]
+}

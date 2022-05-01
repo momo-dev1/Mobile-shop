@@ -1,3 +1,4 @@
+import { useState } from "react"
 
 const ProductImages = ({ images = [] }) => {
     const [main, setMain] = useState(images[0])
