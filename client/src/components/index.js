@@ -1,8 +1,12 @@
 import Product from "./product/Product"
-import Sort from "./shared/Sort"
-import Filters from "./Filters"
-import ProductImages from './ProductImages'
-import ProductList from './ProductImages'
-import Stars from './Stars'
+import ProductImages from './product/ProductImages'
+import ProductList from './product/ProductList'
+import SingleProduct from './product/ProductList'
 
-export { Product, Sort, Filters, ProductImages, ProductList, Stars }
+import Stars from './shared/Stars'
+import Sort from "./shared/Sort"
+import Filters from "./shared/Filters"
+import AmountButtons from "./shared/AmountButtons"
+import AddToCart from "./shared/AddToCart"
+
+export { Product, Sort, Filters, ProductImages, ProductList, SingleProduct, Stars, AmountButtons, AddToCart }
