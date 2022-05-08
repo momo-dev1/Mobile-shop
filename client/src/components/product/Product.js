@@ -2,7 +2,6 @@ import { formatPrice } from '../../utils/formatPrice'
 import { useSelector, useDispatch } from 'react-redux'
 import { updateQuickSpecs } from '../../store/productSlice';
 import { CameraIcon, StorageIcon, ScreenSizeIcon, ArrowIcon } from '../../assets/icons';
-import mobile from "../../assets/mobiles/mobile-1.webp"
 import { Stars } from '../index'
 import { Link } from "react-router-dom";
 
@@ -22,7 +21,7 @@ const Product = ({ id, name, price, reviews, stars, image, company }) => {
 
                 <div className="flex gap-4">
                     <div className='w-[125px]'>
-                        <img className='w-full h-full object-contain' src={mobile} alt="mobile" />
+                        <img className='w-full h-full object-contain' src={image} alt="mobile" />
                     </div>
                     <div>
                         <span className="block">From</span>

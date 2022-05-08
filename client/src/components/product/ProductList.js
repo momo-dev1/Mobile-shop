@@ -23,16 +23,11 @@ const ProductList = () => {
                 <Sort />
                 <Filters />
             </div>
-            {jsonData.productlist.map((product, index) => {
-                return <section className="grid grid-cols-auto-fill gap-5 ">
+            <section className="grid grid-cols-auto-fill gap-5 ">
+                {jsonData.productlist.map((product, index) => (
                     <Product key={product.id} {...product} />
-                    <Product key={index + 1} {...product} />
-                    <Product key={index + 2} {...product} />
-                    <Product key={index + 3} {...product} />
-                    <Product key={index + 4} {...product} />
-                    <Product key={index + 5} {...product} />
-                </section>
-            })}
+                ))}
+            </section>
         </section>
     )
 }
