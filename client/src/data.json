@@ -4,12 +4,89 @@
       "id": "recZkNf2kwmdBcqd0",
       "name": "iPhone 11",
       "price": 39999,
-      "image": "/mobiles/mobile-1.webp",
+      "image": "https://www.cricketwireless.com/uiassets/DAPW4943-list.png",
+      "color": "Black",
+      "company": "apple",
+      "shipping": true,
+      "reviews": 368,
+      "stars": 4.5
+    },
+    {
+      "id": "recZkNf2kwmdBcqd1",
+      "name": "moto power",
+      "price": 13999,
+      "image": "https://www.cricketwireless.com/uiassets/DMTW4111-list.png",
+      "color": "Black",
+      "company": "motorola",
+      "shipping": true,
+      "reviews": 8,
+      "stars": 1.5
+    },
+    {
+      "id": "recZkNf2kwmdBcqd0",
+      "name": "iPhone SE 2nd Gen",
+      "price": 34999,
+      "image": "https://www.cricketwireless.com/uiassets/DAPW4991-list.png",
       "color": "Black",
       "company": "apple",
       "shipping": true,
       "reviews": 25,
       "stars": 4.5
+    },
+    {
+      "id": "recZkNf2kwmdBcqd3",
+      "name": "Galaxy A13 5G",
+      "price": 22999,
+      "image": "https://www.cricketwireless.com/uiassets/DSMW4138-list.png",
+      "color": "Black",
+      "company": "samsung",
+      "shipping": true,
+      "reviews": 41,
+      "stars": 4.1
+    },
+    {
+      "id": "recZkNf2kwmdBcqd4",
+      "name": "moto g stylus 5G",
+      "price": 22999,
+      "image": "https://www.cricketwireless.com/uiassets/DMTW4108-list.png",
+      "color": "Emerald",
+      "company": "motorola",
+      "shipping": true,
+      "reviews": 1992,
+      "stars": 4.2
+    },
+    {
+      "id": "recZkNf2kwmdBcqd5",
+      "name": "Galaxy A53 5G",
+      "price": 40999,
+      "image": "https://www.cricketwireless.com/uiassets/DSMW4140-list.png",
+      "color": "Black",
+      "company": "samsung",
+      "shipping": true,
+      "reviews": 13,
+      "stars": 4.4
+    },
+    {
+      "id": "recZkNf2kwmdBcqd6",
+      "name": "iPhone 13",
+      "price": 82999,
+      "image": "https://www.cricketwireless.com/uiassets/DAPW4260-list.png",
+      "color": "Midnight",
+      "company": "apple",
+      "shipping": true,
+      "reviews": 66,
+      "stars": 4.0
+    },
+    {
+      "id": "recZkNf2kwmdBcqd7",
+      "name": "Galaxy S21 FE 5G",
+      "price": 69999,
+      "image": "https://www.cricketwireless.com/uiassets/DSMW4134-list.png",
+      "color": "Black",
+      "company": "samsung",
+      "shipping": true,
+      "reviews": 80,
+      "stars": 4.0
     }
   ],
   "singleProduct": [
