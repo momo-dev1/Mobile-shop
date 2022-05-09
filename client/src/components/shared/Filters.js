@@ -6,7 +6,7 @@ const Filters = () => {
     // const { filters: { company } } = useSelector((state) => state.products)
     const dispatch = useDispatch()
 
-    const companies = ["Apple", "Motorola", "Samsung"]
+    const companies = ["apple", "motorola", "samsung"]
     const updateFilter = (e) => {
         const name = e.target.name
         let value = e.target.value

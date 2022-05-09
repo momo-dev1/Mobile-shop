@@ -1,16 +1,18 @@
 import { Product, Sort, Filters } from "../index"
-import jsonData from "../../data.json"
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { filterProducts, sortProducts } from "../../store/productSlice"
 const ProductList = () => {
-    // const { sort, filters } = useSelector(state => state.product)
-    // const dispatch = useDispatch()
+    const { sort, products, filters, filtered_Products } = useSelector(state => state.products)
+    const dispatch = useDispatch()
 
-    // useEffect(() => {
-    //     dispatch(filterProducts())
-    //     dispatch(sortProducts())
-    // }, [sort, filters, dispatch])
+    useEffect(() => {
+        dispatch(sortProducts())
+    }, [sort, dispatch])
+
+    useEffect(() => {
+        dispatch(filterProducts())
+    }, [filters, dispatch])
 
     return (
         <section className="max-w-[1054px] mx-auto px-4 md:px-2 lg:px-0">
@@ -24,9 +26,9 @@ const ProductList = () => {
                 <Filters />
             </div>
             <section className="grid grid-cols-auto-fill gap-5 ">
-                {jsonData.productlist.map((product, index) => (
-                    <Product key={product.id} {...product} />
-                ))}
+                {filtered_Products.length > 0 ?
+                    filtered_Products.map(product => <Product key={product.id} {...product} />)
+                    : products.map(product => <Product key={product.id} {...product} />)}
             </section>
         </section>
     )

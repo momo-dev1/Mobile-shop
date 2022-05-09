@@ -1,9 +1,9 @@
 import { createSlice } from "@reduxjs/toolkit";
+import data from "../data.json"
 
 const initialState = {
-    products: [],
-    cart: [],
-    sideBar: false,
+    products: data.productlist,
+    filtered_Products: [],
     sort: 'most-popular',
     quickSpecs: false,
     filters: {
@@ -27,24 +27,42 @@ const productsSlice = createSlice({
             state.quickSpecs = !state.quickSpecs;
         },
         sortProducts(state) {
-            // const { sort } = state;
-            // if (sort === 'most-popular') {
-            //     return
-            // } else if (sort === 'lowest-price') {
-            //     state.products.sort((a, b) => a.price - b.price);
-            // } else if (sort === 'highest-price') {
-            //     state.products.sort((a, b) => b.price - a.price);
-            // }
+            const { sort, filters: { company } } = state;
+            let temProducts = [...state.products];
+            if (company) {
+                temProducts = [...state.filtered_Products]
+            }
+
+            if (sort === 'most-popular') {
+                temProducts.sort((value) => value ? -1 : 1);
+            }
+
+            if (sort === 'price-lowest') {
+                temProducts.sort((a, b) => a.price - b.price);
+            }
+
+            if (sort === 'price-highest') {
+                temProducts.sort((a, b) => b.price - a.price);
+            }
+
+            if (sort === "name-a") {
+                temProducts.sort((a, b) => a.name.localeCompare(b.name));
+            }
+            state.filtered_Products = temProducts
         },
         filterProducts(state, { payload }) {
-            // const { company, search } = state.filters;
-            // if (payload === '') {
-            //     state.products = [...state.products];
-            // } else if (company) {
-            //     state.products = state.products.filter(product => product.company === payload);
-            // } else if (search) {
+            const { company, search } = state.filters;
+            let temProducts = [...state.products];
+            if (payload === '') {
+                return temProducts
+            }
+            if (company) {
+                temProducts = temProducts.filter(product => product.company === company);
+            }
+            // if (search) {
             //     state.products = state.products.filter(product => product.name.toLowerCase().stratsWith(payload.toLowerCase()));
             // }
+            state.filtered_Products = temProducts
         }
 
     }

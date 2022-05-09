@@ -1,7 +1,7 @@
 import { formatPrice } from '../../utils/formatPrice'
 import { useSelector, useDispatch } from 'react-redux'
 import { updateQuickSpecs } from '../../store/productSlice';
-import { CameraIcon, StorageIcon, ScreenSizeIcon, ArrowIcon } from '../../assets/icons';
+import { ArrowIcon } from '../../assets/icons';
 import { Stars } from '../index'
 import { Link } from "react-router-dom";
 import QuickSpecs from '../shared/QuickSpecs';
@@ -40,7 +40,7 @@ const Product = ({ id, name, price, reviews, stars, image, company }) => {
                         <ArrowIcon rotate={quickSpecs} />
                     </div>
                 </button>
-                <QuickSpecs isTrue={quickSpecs} Icon={ScreenSizeIcon} Icon2={CameraIcon} Icon3={StorageIcon} />
+                <QuickSpecs isTrue={quickSpecs} />
             </div>
         </section>
     )

@@ -1,11 +1,13 @@
-import { ProductList } from "../components/index"
+import Products from "./products/Products"
 
 const HomePage = () => {
     return (
         <div>
-            <ProductList />
+            <Products />
         </div>
     )
 }
 
 export default HomePage
+
+

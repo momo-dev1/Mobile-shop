@@ -1,4 +1,4 @@
-import { ProductImages, AmountButtons, AddToCart } from "../index"
+import { ProductImages, AmountButtons, AddToCart } from "../components/index"
 
 const SingleProduct = () => {
     return (
