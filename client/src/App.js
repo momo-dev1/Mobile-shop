@@ -1,22 +1,10 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
-import { ProductList, SingleProduct } from "./components/index";
-import Home from "./pages/Home";
+import { Outlet } from "react-router-dom"
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />}>
-          <Route path="mobiles" element={<ProductList />}>
-            <Route path=":mobileId" element={<SingleProduct />} />
-          </Route>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <div className="App">
+      <Outlet />
+    </div>
   );
 }
 

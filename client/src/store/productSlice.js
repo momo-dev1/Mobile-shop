@@ -23,6 +23,14 @@ const productsSlice = createSlice({
             const { name, value } = payload
             state.filters[name] = value;
         },
+        clearFilters(state) {
+            state.filters = {
+                search: '',
+                company: '',
+                shipping: false,
+            };
+            state.filtered_Products = []
+        },
         updateQuickSpecs(state) {
             state.quickSpecs = !state.quickSpecs;
         },
@@ -52,22 +60,21 @@ const productsSlice = createSlice({
         },
         filterProducts(state, { payload }) {
             const { company, search } = state.filters;
+
             let temProducts = [...state.products];
-            if (payload === '') {
-                return temProducts
-            }
+
             if (company) {
                 temProducts = temProducts.filter(product => product.company === company);
             }
-            // if (search) {
-            //     state.products = state.products.filter(product => product.name.toLowerCase().stratsWith(payload.toLowerCase()));
-            // }
+            if (search) {
+                temProducts = temProducts.filter(product => product.name.toLowerCase().startsWith(search.toLowerCase()));
+            }
             state.filtered_Products = temProducts
         }
 
     }
 });
 
-export const { updateSort, updateFilters, updateQuickSpecs, filterProducts, sortProducts } = productsSlice.actions;
+export const { updateSort, updateFilters, updateQuickSpecs, filterProducts, sortProducts, clearFilters } = productsSlice.actions;
 export default productsSlice.reducer;
 

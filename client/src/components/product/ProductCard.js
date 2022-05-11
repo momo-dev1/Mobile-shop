@@ -6,7 +6,7 @@ import { Stars } from '../index'
 import { Link } from "react-router-dom";
 import QuickSpecs from '../shared/QuickSpecs';
 
-const Product = ({ id, name, price, reviews, stars, image, company }) => {
+const ProductCard = ({ id, name, price, reviews, stars, image, company }) => {
     const { quickSpecs } = useSelector((state) => state.products)
     const dispatch = useDispatch()
 
@@ -29,8 +29,8 @@ const Product = ({ id, name, price, reviews, stars, image, company }) => {
                         <h5 className="text-[#60a630] text-[28px] ">{formatPrice(price)}</h5>
                         <p className="text-[9px] max-w-[150px]">When you bring your number and activate a $60/mo plan</p>
                     </div>
-
                 </div>
+
             </Link>
 
             <div className="text-center mt-3 cursor-pointer">
@@ -46,4 +46,4 @@ const Product = ({ id, name, price, reviews, stars, image, company }) => {
     )
 }
 
-export default Product
+export default ProductCard

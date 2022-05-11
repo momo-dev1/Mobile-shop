@@ -1,7 +1,8 @@
-import { Product, Sort, Filters } from "../index"
+import { ProductCard, Sort, Filters } from "../index"
 import { useEffect } from "react"
 import { useDispatch, useSelector } from "react-redux"
 import { filterProducts, sortProducts } from "../../store/productSlice"
+
 const ProductList = () => {
     const { sort, products, filters, filtered_Products } = useSelector(state => state.products)
     const dispatch = useDispatch()
@@ -27,8 +28,8 @@ const ProductList = () => {
             </div>
             <section className="grid grid-cols-auto-fill gap-5 ">
                 {filtered_Products.length > 0 ?
-                    filtered_Products.map(product => <Product key={product.id} {...product} />)
-                    : products.map(product => <Product key={product.id} {...product} />)}
+                    filtered_Products.map(product => <ProductCard key={product.id} {...product} />)
+                    : products.map(product => <ProductCard key={product.id} {...product} />)}
             </section>
         </section>
     )

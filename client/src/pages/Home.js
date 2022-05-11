@@ -1,9 +1,9 @@
-import Products from "./products/Products"
+
 
 const HomePage = () => {
     return (
-        <div>
-            <Products />
+        <div>asdasd
+            
         </div>
     )
 }
