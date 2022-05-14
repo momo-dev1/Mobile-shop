@@ -10,7 +10,8 @@
       "shipping": true,
       "reviews": 368,
       "stars": 4.5,
-      "popular": true
+      "popular": true,
+      "inStock": true
     },
     {
       "id": "recZkNf2kwmdBcqd1",
@@ -22,7 +23,8 @@
       "shipping": true,
       "reviews": 8,
       "stars": 1.5,
-      "popular": false
+      "popular": false,
+      "inStock": true
     },
     {
       "id": "recZkNf2kwmdBcqd2",
@@ -34,7 +36,8 @@
       "shipping": true,
       "reviews": 25,
       "stars": 4.5,
-      "popular": false
+      "popular": false,
+      "inStock": true
     },
     {
       "id": "recZkNf2kwmdBcqd3",
@@ -46,7 +49,8 @@
       "shipping": true,
       "reviews": 41,
       "stars": 4.1,
-      "popular": false
+      "popular": false,
+      "inStock": true
     },
     {
       "id": "recZkNf2kwmdBcqd4",
@@ -58,7 +62,8 @@
       "shipping": true,
       "reviews": 1992,
       "stars": 4.2,
-      "popular": false
+      "popular": false,
+      "inStock": true
     },
     {
       "id": "recZkNf2kwmdBcqd5",
@@ -70,7 +75,8 @@
       "shipping": true,
       "reviews": 13,
       "stars": 4.4,
-      "popular": false
+      "popular": false,
+      "inStock": true
     },
     {
       "id": "recZkNf2kwmdBcqd6",
@@ -82,28 +88,14 @@
       "shipping": true,
       "reviews": 66,
       "stars": 4.0,
-      "popular": true
+      "popular": true,
+      "inStock": true
     },
     {
       "id": "recZkNf2kwmdBcqd7",
       "name": "Galaxy S21 FE 5G",
       "price": 69999,
       "image": "https://www.cricketwireless.com/uiassets/DSMW4134-list.png",
-      "color": "Black",
-      "company": "samsung",
-      "shipping": true,
-      "reviews": 80,
-      "stars": 4.0,
-      "popular": true
-    }
-  ],
-  "singleProduct": [
-    {
-      "id": "recZkNf2kwmdBcqd0",
-      "stock": 3,
-      "price": 39999,
-      "shipping": true,
-      "color": "Black",
       "images": [
         {
           "id": "attub6EG88kJKuYs8",
@@ -118,11 +110,13 @@
           "url": "./src/assets/mobiles/mobile-3.webp"
         }
       ],
-      "reviews": 25,
-      "stars": 4.9,
-      "name": "iPhone 11",
-      "description": "Shoot 4K videos, beautiful portraits, and sweeping landscapes with the all-new dual-camera system. Capture your best low-light photos with Night mode. See true-to-life color in your photos, videos, and games on the 6.1-inch Liquid Retina display.3 Experience unprecedented performance with A13 Bionic for gaming, augmented reality (AR), and photography. Do more and charge less with all-day battery life.2 And worry less with water resistance up to 2 meters for 30 minutes.1",
-      "company": "apple"
+      "color": "Black",
+      "company": "samsung",
+      "shipping": true,
+      "reviews": 80,
+      "stars": 4.0,
+      "popular": true,
+      "inStock": true
     }
   ]
 }

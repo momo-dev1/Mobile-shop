@@ -11,7 +11,7 @@ import {
   Route,
 } from "react-router-dom";
 
-import Home from './pages/Home';
+import Home from './pages/HomePage';
 import ProductsPage from './pages/ProductsPage';
 import CartPage from './pages/CartPage';
 
