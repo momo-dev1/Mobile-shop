@@ -14,7 +14,7 @@ const ProductList = () => {
     useEffect(() => {
         dispatch(filterProducts())
     }, [filters, dispatch])
-
+    
     return (
         <section className="max-w-[1054px] mx-auto px-4 md:px-2 lg:px-0">
             <div className="h-[170px]"></div>

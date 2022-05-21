@@ -10,8 +10,21 @@ const initialState = {
         search: '',
         company: '',
         shipping: false,
-    }
+    },
+    isLoading: false,
 };
+
+// export const getCartItems = createAsyncThunk(
+//     'cart/getCartItems',
+//     async (_, thunkAPI) => {
+//       try {
+//         return await axios(url).then((res) => res.data);
+//       } catch (error) {
+//         return thunkAPI.rejectWithValue('something went wrong');
+//       }
+//     }
+//   );
+
 const productsSlice = createSlice({
     name: "products",
     initialState,

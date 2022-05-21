@@ -1,4 +1,6 @@
-
+import { useEffect } from "react";
+import { calculateTotals } from "../../store/productSlice"
+import { useDispatch, useSelector } from "react-redux"
 const products = [
     {
         id: 1,
@@ -26,6 +28,13 @@ const products = [
 
 ]
 const Cart = () => {
+
+    const { cartItems } = useSelector(state => state.cart)
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(calculateTotals());
+    }, [cartItems, dispatch]);
     return (
         <div className="bg-white">
             <div className="max-w-2xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-0">
