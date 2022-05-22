@@ -1,5 +1,10 @@
 const Product = require("../models/product")
 
+/*
+    @desc    GET list of all products
+    @route   GET /api/v1/products
+    @access  GET Public
+*/
 const getAllProducts = async (req, res) => {
     const { featured, company, name, sort, fields, numericFilters } = req.query
     const queryObject = {}

@@ -6,6 +6,7 @@ const express = require("express")
 const app = express();
 
 const productsRouter = require('./routes/products');
+const categoriesRouter = require('./routes/products');
 const connectDB = require('./db/connect');
 
 const notFound = require('./middleware/not-found');
@@ -15,6 +16,7 @@ app.use(express.json());
 
 // routes
 app.use('/api/v1/products', productsRouter)
+app.use('/api/v1/categories', categoriesRouter)
 app.use(notFound)
 app.use(errorHandlerMiddleware)
 
