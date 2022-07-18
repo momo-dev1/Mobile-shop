@@ -11,7 +11,7 @@ const getAllCategories = asyncHnadler(async (req, res) => {
 
     const queryObject = {};
 
-    let result = Product.find(queryObject)
+    let result = Category.find(queryObject)
 
     const page = Number(req.query.page) || 1
     const limit = Number(req.query.limit) || 10
