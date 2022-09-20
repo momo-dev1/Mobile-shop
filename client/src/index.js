@@ -11,26 +11,23 @@ import {
   Route,
 } from "react-router-dom";
 
-import Home from './pages/HomePage';
-import ProductsPage from './pages/ProductsPage';
-import CartPage from './pages/CartPage';
-
+import { Home, Login, SignUp, CartPage, ProductsPage, NotFound } from "./pages"
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<App />}>
-            <Route index element={<Home />} />
-            <Route path="cart" element={<CartPage />} />
-            <Route path="mobiles" element={<ProductsPage />}>
-              {/* <Route path=":mobileId" element={<SingleProduct />} /> */}
-            </Route>
+
+  <Provider store={store}>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route index element={<Home />} />
+          <Route path="cart" element={<CartPage />} />
+          <Route path="mobiles" element={<ProductsPage />}>
+            {/* <Route path=":mobileId" element={<SingleProduct />} /> */}
           </Route>
-        </Routes>
-      </BrowserRouter>
-    </Provider>
-  </React.StrictMode>,
+        </Route>
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  </Provider>,
   document.getElementById('root')
 );
